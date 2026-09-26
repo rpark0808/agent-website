@@ -2,7 +2,7 @@ const services = [
   {
     number: '01',
     title: 'Representation',
-    copy: 'Rochan represents the player. He is the point of contact who carries the player’s interests into conversations with clubs.',
+    copy: 'Lewis represents the player. He is the point of contact who carries the player’s interests into conversations with clubs.',
   },
   {
     number: '02',

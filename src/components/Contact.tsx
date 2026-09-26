@@ -36,7 +36,7 @@ export function Contact() {
           </h2>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-bone/80">
             The form opens your email app with your name, age, position, club, and message
-            already filled in. Rochan reads the note himself.
+            already filled in. Lewis reads the note himself.
           </p>
           <dl className="mt-8 space-y-4 text-sm">
             <div>

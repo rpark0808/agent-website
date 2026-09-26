@@ -1,7 +1,7 @@
 /**
- * Editable site details. This is the only file Rochan needs to personalize.
+ * Editable site details. This is the only file Lewis needs to personalize.
  *
- * Rochan: replace hello@example.com with the real address players should use.
+ * Lewis: replace hello@example.com with the real address players should use.
  * Add a phone number and location, or leave them as empty strings to hide them.
  * Social links are full URLs. Leave a social empty to hide it.
  * For a photo, add the image to public/ and set photo to that path
@@ -21,9 +21,9 @@ export const site: {
     x: string
   }
 } = {
-  name: 'Rochan Park',
+  name: 'Lewis Lee',
   role: 'FIFA Football Agent',
-  // Rochan: replace this with your real email before you publish.
+  // Lewis: replace this with your real email before you publish.
   email: 'hello@example.com',
   phone: '',
   location: '',

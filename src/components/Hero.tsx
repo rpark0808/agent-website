@@ -10,9 +10,9 @@ export function Hero() {
             Newly certified FIFA football agent
           </p>
           <h1 className="mt-4 font-display text-[4.6rem] font-semibold uppercase leading-[0.82] tracking-tight sm:text-8xl lg:text-[8.4rem]">
-            Rochan
+            Lewis
             <br />
-            Park
+            Lee
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-bone/85 md:text-xl">
             {site.name} represents young athletic players who do not already have an agent.

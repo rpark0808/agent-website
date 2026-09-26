@@ -7,7 +7,7 @@ const steps = [
   {
     number: '02',
     title: 'Talk it through',
-    copy: 'Rochan learns how you play, what you want next, and what you and your family need from someone who represents you.',
+    copy: 'Lewis learns how you play, what you want next, and what you and your family need from someone who represents you.',
   },
   {
     number: '03',
