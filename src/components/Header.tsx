@@ -22,14 +22,9 @@ export function Header() {
       <div className="h-1 bg-signal" />
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3 md:px-8">
         <a href="#top" onClick={close} className="flex items-center gap-3">
-          <span
-            aria-hidden="true"
-            className="grid h-10 w-10 place-items-center bg-ink font-display text-lg font-semibold tracking-wide text-bone"
-          >
-            RP
-          </span>
+          <img src={site.logo} alt="LTP Crew Sports" className="h-12 w-auto" />
           <span className="leading-none">
-            <span className="block font-display text-[1.35rem] font-semibold uppercase tracking-wide">
+            <span className="block font-display text-base font-semibold uppercase tracking-wide sm:text-[1.15rem]">
               {site.name}
             </span>
             <span className="mt-1 block text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-muted">

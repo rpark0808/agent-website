@@ -2,17 +2,17 @@ const steps = [
   {
     number: '01',
     title: 'Reach out',
-    copy: 'Send your name, age, position, and whether you are at a club or a free agent. A few lines on what you want help with is enough.',
+    copy: 'Submit your bio: name, age, position, citizenship(s), current (previous) club/level, contract status, and a brief note on what support you are seeking.',
   },
   {
     number: '02',
     title: 'Talk it through',
-    copy: 'Lewis learns how you play, what you want next, and what you and your family need from someone who represents you.',
+    copy: 'We evaluate your CV, video highlights and full-match footage, followed by an in-depth conversation about your career goals.',
   },
   {
     number: '03',
     title: 'Pursue the next step',
-    copy: 'If it is a fit, he represents you and helps you pursue club opportunities. If it is not, he will say so.',
+    copy: 'If the fit is right, Lewis takes you on to manage your representation and actively pursue your next club placement.',
   },
 ]
 
@@ -24,7 +24,7 @@ export function Process() {
           How it works
         </p>
         <h2 className="mt-3 max-w-3xl font-display text-5xl font-semibold uppercase leading-[0.9] tracking-tight md:text-6xl">
-          Three steps, then a straight answer
+          Reach out, talk it through, pursue the next step
         </h2>
         <ol className="mt-12 grid gap-10 md:grid-cols-3">
           {steps.map((step) => (

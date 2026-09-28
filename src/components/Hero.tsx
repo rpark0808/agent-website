@@ -5,25 +5,23 @@ export function Hero() {
     <section id="top" className="relative overflow-hidden bg-ink text-bone">
       <PitchMark />
       <div className="relative mx-auto grid max-w-6xl gap-10 px-5 py-16 md:px-8 md:py-24 lg:grid-cols-12 lg:py-28">
-        <div className="lg:col-span-8">
+        <div className="lg:col-span-9">
           <p className="font-display text-sm font-semibold uppercase tracking-[0.22em] text-[#e7b8a2]">
-            Newly certified FIFA football agent
+            {site.license}
           </p>
-          <h1 className="mt-4 font-display text-[4.6rem] font-semibold uppercase leading-[0.82] tracking-tight sm:text-8xl lg:text-[8.4rem]">
-            Lewis
+          <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-bone/75">
+            {site.credential}
+          </p>
+          <h1 className="mt-4 font-display text-[3.4rem] font-semibold uppercase leading-[0.84] tracking-tight sm:text-7xl lg:text-8xl">
+            Sukkyun
             <br />
-            Lee
+            Lewis Lee
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-bone/85 md:text-xl">
-            {site.name} represents young athletic players who do not already have an agent.
-            He helps them pursue club opportunities, and he keeps the player and the family
-            clear on what comes next.
+            Lewis represents highly talented young male and female professional and semi-professional
+            football players, dedicated to unlocking their full potential and elevating their careers
+            to the next level.
           </p>
-          {site.location ? (
-            <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-bone/70">
-              Based in {site.location}
-            </p>
-          ) : null}
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href="#contact"

@@ -1,5 +1,11 @@
 import { site } from '../site.ts'
 
+const pillars = [
+  ['Represents', 'Connecting players directly to elite clubs.'],
+  ['Guides', 'Navigating every step with players and families.'],
+  ['Focus', 'Unlocking the next generation of football talent.'],
+]
+
 export function About() {
   return (
     <section id="about">
@@ -9,7 +15,7 @@ export function About() {
             About
           </p>
           <h2 className="mt-3 font-display text-5xl font-semibold uppercase leading-[0.9] tracking-tight md:text-6xl">
-            A new agent for players still looking
+            Developing the game’s future stars
           </h2>
           {site.photo ? (
             <img
@@ -22,25 +28,15 @@ export function About() {
         <div className="lg:col-span-7">
           <div className="max-w-prose space-y-5 text-lg leading-relaxed text-muted">
             <p>
-              {site.name} is newly certified as a FIFA football agent. His work is with young
-              players who are athletic, serious about football, and do not have representation yet.
-            </p>
-            <p>
-              He represents players. He does not hire them. When a club opportunity is worth
-              pursuing, he is on the player’s side of that conversation — including the questions
-              a family should ask before anyone signs.
-            </p>
-            <p>
-              He is at the start of this work and plain about that. Players get a direct
-              representative, not a promise of a contract he cannot make.
+              Driven by a passion for developing the game’s future stars, the agency provides
+              personalized representation, strategic career planning, and elite support tailored to
+              the modern football landscape. Whether navigating crucial transfer windows, securing
+              commercial partnerships, or managing long-term athletic development, Lewis serves as a
+              trusted partner committed to turning raw promise into lasting professional success.
             </p>
           </div>
           <ul className="mt-10 grid gap-px border border-line bg-line sm:grid-cols-3">
-            {[
-              ['Represents', 'The player, in conversations with clubs'],
-              ['Guides', 'The player and the family together'],
-              ['Focus', 'Young athletes without an agent'],
-            ].map(([title, detail]) => (
+            {pillars.map(([title, detail]) => (
               <li key={title} className="bg-paper p-5">
                 <p className="font-display text-2xl font-semibold uppercase tracking-wide">{title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-muted">{detail}</p>

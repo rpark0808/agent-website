@@ -1,10 +1,8 @@
-# Lewis Lee — FIFA Football Agent
+# Sukkyun Lewis Lee — FIFA Agent
 
-A one-page site for Lewis Lee, a newly certified FIFA football agent. It is for players who do not already have an agent: they can read how he represents them and send an enquiry.
+A one-page site for Sukkyun Lewis Lee, a licensed FIFA agent (License ID: 202412-9540) and a lawyer in the USA and Canada. He represents highly talented young male and female professional and semi-professional football players.
 
-He represents players and helps them pursue club opportunities. The site does not claim that he hires players.
-
-The contact form has no backend. Submitting it opens the visitor’s email app with the name, age, position, current club or free agent, and message filled in.
+The contact form has no backend. Submitting it opens the visitor’s email app with name, age, nationality, position, current or previous club, free-agent status, and message filled in. Enquiries go to ltp.crew.sports@gmail.com.
 
 ## Run locally
 
@@ -64,12 +62,10 @@ Upload the contents of `dist/` to GitHub Pages, or push that folder to a `gh-pag
 
 ## Personalize before you share it
 
-Edit `src/site.ts`. It holds the name, role, email, phone, location, photo, and social links.
+Edit `src/site.ts`. It holds the name, role, license, email, phone, location, photo, and social links.
 
-- **Email** — replace `hello@example.com` with the address players should use.
+- **Email** — enquiries go to `ltp.crew.sports@gmail.com`.
 - **Phone** — add a number, or leave it empty to hide it.
 - **Location** — add a city or region, or leave it empty to hide it.
-- **Photo** — add an image to `public/` and set `photo` to that path, for example `"/portrait.jpg"`. Leave it empty until you have a photo you want to use. The site does not show a stand-in portrait.
+- **Photo** — add an image to `public/` and set `photo` to that path, for example `"/portrait.jpg"`. Leave it empty until you have a photo you want to use. The site does not show a stand-in portrait. The header uses the LTP Crew Sports logo.
 - **Socials** — paste full profile URLs, or leave them empty to hide those links.
-
-Do not add a license number, club names, statistics, or testimonials unless they are real.

@@ -3,7 +3,6 @@ import { Contact } from './components/Contact.tsx'
 import { Footer } from './components/Footer.tsx'
 import { Header } from './components/Header.tsx'
 import { Hero } from './components/Hero.tsx'
-import { Players } from './components/Players.tsx'
 import { Process } from './components/Process.tsx'
 import { Services } from './components/Services.tsx'
 
@@ -21,7 +20,6 @@ export default function App() {
         <Hero />
         <About />
         <Services />
-        <Players />
         <Process />
         <Contact />
       </main>

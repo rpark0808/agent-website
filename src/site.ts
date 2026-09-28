@@ -1,33 +1,32 @@
 /**
- * Editable site details. This is the only file Lewis needs to personalize.
- *
- * Lewis: replace hello@example.com with the real address players should use.
- * Add a phone number and location, or leave them as empty strings to hide them.
+ * Editable site details.
  * Social links are full URLs. Leave a social empty to hide it.
- * For a photo, add the image to public/ and set photo to that path
- * (for example "/portrait.jpg"). Leave photo empty until then — the site
- * does not show a stand-in portrait.
  */
 export const site: {
   name: string
   role: string
+  license: string
+  credential: string
   email: string
   phone: string
   location: string
   photo: string
+  logo: string
   socials: {
     instagram: string
     linkedin: string
     x: string
   }
 } = {
-  name: 'Lewis Lee',
-  role: 'FIFA Football Agent',
-  // Lewis: replace this with your real email before you publish.
-  email: 'hello@example.com',
+  name: 'Sukkyun Lewis Lee',
+  role: 'FIFA Agent',
+  license: 'Licensed FIFA Agent (License ID: 202412-9540)',
+  credential: 'Certified FIFA Agent and Lawyer (USA & Canada)',
+  email: 'ltp.crew.sports@gmail.com',
   phone: '',
   location: '',
   photo: '',
+  logo: `${import.meta.env.BASE_URL}ltp-crew-logo.jpg`,
   socials: {
     instagram: '',
     linkedin: '',
@@ -38,7 +37,6 @@ export const site: {
 export const nav = [
   { href: '#about', label: 'About' },
   { href: '#services', label: 'Services' },
-  { href: '#players', label: 'Players' },
   { href: '#process', label: 'How it works' },
   { href: '#contact', label: 'Contact' },
 ] as const

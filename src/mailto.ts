@@ -1,8 +1,10 @@
 export type PlayerEnquiry = {
   name: string
   age: string
+  nationality: string
   position: string
   club: string
+  freeAgent: boolean
   message: string
 }
 
@@ -12,8 +14,10 @@ export function buildPlayerEnquiryMailto(email: string, enquiry: PlayerEnquiry):
   const body = [
     `Name: ${enquiry.name.trim()}`,
     `Age: ${enquiry.age.trim()}`,
+    `Nationality: ${enquiry.nationality.trim()}`,
     `Position: ${enquiry.position.trim()}`,
-    `Current club or free agent: ${enquiry.club.trim()}`,
+    `Current or previous club: ${enquiry.club.trim()}`,
+    `Free agent: ${enquiry.freeAgent ? 'Yes' : 'No'}`,
     '',
     enquiry.message.trim(),
   ].join('\n')

@@ -1,23 +1,23 @@
 const services = [
   {
     number: '01',
-    title: 'Representation',
-    copy: 'Lewis represents the player. He is the point of contact who carries the player’s interests into conversations with clubs.',
+    title: 'Club Representation',
+    copy: 'Your direct line to decision-makers. Lewis leads all club communications, advocating fiercely for your vision and best interests.',
   },
   {
     number: '02',
-    title: 'Contracts',
-    copy: 'When an offer is on the table, he helps the player and family understand the terms and what to ask before anything is signed.',
+    title: 'Contract & Negotiation',
+    copy: 'Terms decoded and interests protected. Expert negotiation to ensure every contract secures your value before pen meets paper.',
   },
   {
     number: '03',
-    title: 'Club opportunities',
-    copy: 'He helps players pursue club opportunities that fit their age, position, and the level they are ready for — at a club now, or as a free agent.',
+    title: 'Club Opportunities',
+    copy: 'Strategic placements matched to your talent. Finding the right stage, right league, and right club at every phase of your growth.',
   },
   {
     number: '04',
-    title: 'Career guidance',
-    copy: 'Practical guidance for the player and the family: how to prepare, what to share, and how to think about the next step without rushing it.',
+    title: 'Career Guidance',
+    copy: 'A dedicated partnership for player and family. Clear, practical support to navigate the pressures and decisions of modern football.',
   },
 ]
 
@@ -25,18 +25,12 @@ export function Services() {
   return (
     <section id="services" className="border-t border-line">
       <div className="mx-auto max-w-6xl px-5 py-20 md:px-8 md:py-28">
-        <div className="max-w-2xl">
-          <p className="font-display text-sm font-semibold uppercase tracking-[0.22em] text-signal">
-            Services
-          </p>
-          <h2 className="mt-3 font-display text-5xl font-semibold uppercase leading-[0.9] tracking-tight md:text-6xl">
-            What representation covers
+        <p className="font-display text-sm font-semibold uppercase tracking-[0.22em] text-signal">
+          Services
+        </p>
+          <h2 className="mt-3 max-w-3xl font-display text-5xl font-semibold uppercase leading-[0.9] tracking-tight md:text-6xl">
+            Club representation to career guidance
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted">
-            Four parts of the same job: stand with the player, make the paperwork understandable,
-            and help pursue the right club opportunity.
-          </p>
-        </div>
         <ol className="mt-12 grid gap-px border border-line bg-line md:grid-cols-2">
           {services.map((service) => (
             <li key={service.number} className="bg-bone p-6 md:p-8">

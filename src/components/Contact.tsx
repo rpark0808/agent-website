@@ -7,6 +7,7 @@ const fieldClass =
 
 export function Contact() {
   const [notice, setNotice] = useState('')
+  const [freeAgent, setFreeAgent] = useState(false)
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
@@ -15,8 +16,10 @@ export function Contact() {
     const href = buildPlayerEnquiryMailto(site.email, {
       name: String(data.get('name') ?? ''),
       age: String(data.get('age') ?? ''),
+      nationality: String(data.get('nationality') ?? ''),
       position: String(data.get('position') ?? ''),
       club: String(data.get('club') ?? ''),
+      freeAgent,
       message: String(data.get('message') ?? ''),
     })
     form.dataset.mailto = href
@@ -32,11 +35,11 @@ export function Contact() {
             Contact
           </p>
           <h2 className="mt-3 font-display text-5xl font-semibold uppercase leading-[0.9] tracking-tight md:text-6xl">
-            Tell him where you play
+            Share your information to start the journey together
           </h2>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-bone/80">
-            The form opens your email app with your name, age, position, club, and message
-            already filled in. Lewis reads the note himself.
+            The form opens your email app with your bio already filled in. Lewis reads the note
+            himself.
           </p>
           <dl className="mt-8 space-y-4 text-sm">
             <div>
@@ -101,6 +104,23 @@ export function Contact() {
             </div>
             <div className="flex flex-col gap-2">
               <label
+                htmlFor="nationality"
+                className="font-display text-sm font-semibold uppercase tracking-[0.16em]"
+              >
+                Nationality
+              </label>
+              <input
+                id="nationality"
+                name="nationality"
+                type="text"
+                required
+                autoComplete="country-name"
+                placeholder="Citizenship"
+                className={fieldClass}
+              />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label
                 htmlFor="position"
                 className="font-display text-sm font-semibold uppercase tracking-[0.16em]"
               >
@@ -117,16 +137,29 @@ export function Contact() {
             </div>
             <div className="flex flex-col gap-2 sm:col-span-2">
               <label htmlFor="club" className="font-display text-sm font-semibold uppercase tracking-[0.16em]">
-                Current club or free agent
+                Current or previous club
               </label>
               <input
                 id="club"
                 name="club"
                 type="text"
-                required
-                placeholder="Club name, or free agent"
+                required={!freeAgent}
+                placeholder="Club and level"
                 className={fieldClass}
               />
+            </div>
+            <div className="flex items-center gap-3 sm:col-span-2">
+              <input
+                id="free-agent"
+                name="freeAgent"
+                type="checkbox"
+                checked={freeAgent}
+                onChange={(event) => setFreeAgent(event.target.checked)}
+                className="h-4 w-4 accent-signal"
+              />
+              <label htmlFor="free-agent" className="font-display text-sm font-semibold uppercase tracking-[0.16em]">
+                Free agent
+              </label>
             </div>
             <div className="flex flex-col gap-2 sm:col-span-2">
               <label
@@ -140,7 +173,7 @@ export function Contact() {
                 name="message"
                 required
                 rows={5}
-                placeholder="What you want help with"
+                placeholder="What support you are seeking"
                 className={fieldClass}
               />
             </div>
